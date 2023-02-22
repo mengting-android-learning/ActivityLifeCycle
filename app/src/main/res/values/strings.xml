@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ActivityLifeCycle</string>
     <string name="second_button">Button 2</string>
+    <string name="dialog_text">this ia a dialog activity</string>
+    <string name="button1_text">Start SecondActivity</string>
+    <string name="button2_text">Start DialogActivity</string>
 </resources>

@@ -4,13 +4,12 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
-class SecondActivity : AppCompatActivity() {
-    private val tag = "SecondActivity"
-
+class DialogActivity : AppCompatActivity() {
+    private val tag = "DialogActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.second_activity)
         Log.d(tag, "onCreate")
+        setContentView(R.layout.activity_dialog)
     }
 
     override fun onStart() {
