@@ -17,7 +17,13 @@
             android:theme="@style/Theme.AppCompat.Dialog"/>
         <activity
             android:name=".SecondActivity"
-            android:exported="false" />
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.example.activitylifecycle.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.activitylifecycle.MY_CATEGORY"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

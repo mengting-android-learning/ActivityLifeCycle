@@ -14,7 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val button1: Button = findViewById(R.id.start_second_activity_button)
         button1.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+            val intent = Intent("com.example.activitylifecycle.ACTION_START")
+            intent.addCategory("com.example.activitylifecycle.MY_CATEGORY")
             startActivity(intent)
         }
         val button2 = findViewById<Button>(R.id.start_dialog_activity_button)
