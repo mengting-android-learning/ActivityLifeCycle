@@ -1,6 +1,7 @@
 package com.example.activitylifecycle
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -14,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val button1: Button = findViewById(R.id.start_second_activity_button)
         button1.setOnClickListener {
-            val intent = Intent("com.example.activitylifecycle.ACTION_START")
-            intent.addCategory("com.example.activitylifecycle.MY_CATEGORY")
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://www.baidu.com")
             startActivity(intent)
         }
         val button2 = findViewById<Button>(R.id.start_dialog_activity_button)
