@@ -10,6 +10,8 @@ class DialogActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d(tag, "onCreate")
         setContentView(R.layout.activity_dialog)
+        val extraData = intent.getStringExtra("extra_data")
+        Log.d(tag, "extra data is $extraData")
     }
 
     override fun onStart() {

@@ -21,8 +21,9 @@ class MainActivity : AppCompatActivity() {
         }
         val button2 = findViewById<Button>(R.id.start_dialog_activity_button)
         button2.setOnClickListener {
+            val data = "hello"
             val intent = Intent(this, DialogActivity::class.java)
-            startActivity(intent)
+            intent.putExtra("extra_data", data)
         }
     }
 
